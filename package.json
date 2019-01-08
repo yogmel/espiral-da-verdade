@@ -1,0 +1,30 @@
+{
+  "name": "consumoteca-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yogmel@bitbucket.org/yogmel/consumoteca-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yogmel/consumoteca-lab#readme",
+  "dependencies": {
+    "css-loader": "^2.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.1"
+  }
+}
