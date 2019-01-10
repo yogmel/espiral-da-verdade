@@ -1,5 +1,5 @@
-$brand-color: blue;
-
-* {
-  background-color: $brand-color;
-}
+@import './base/variables';
+@import './base/base';
+@import './utilities/layout';
+@import './sections/header';
+@import './sections/sections';

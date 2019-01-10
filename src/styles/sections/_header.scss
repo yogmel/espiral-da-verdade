@@ -1,0 +1,14 @@
+.header-contents {
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: $dark-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img-small {
+    max-width: 17rem;
+  }
+  &__img-logo {
+    max-width: 75rem;
+  }
+}

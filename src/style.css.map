@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB,CACf,gBAAgB,CCAL,IAAI,CDCf,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM",
+"sources": ["styles/sections/_header.scss","styles/base/_variables.scss"],
+"names": [],
+"file": "style.css"
+}
