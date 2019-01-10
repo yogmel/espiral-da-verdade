@@ -1,0 +1,126 @@
+/* SECTION 1 - Retangulo aureo */
+.retangulo {
+  padding: 4rem;
+
+  &__col1 {
+    .col1-img01 {
+      max-width: 200px;
+    }
+  }
+
+  &__col2 {
+    .col2-text {
+      text-transform: uppercase;
+      text-shadow:
+        3px 3px 0 #000,
+        /* Simulated effect for Firefox and Opera
+            and nice enhancement for WebKit */
+        -1px -1px 0 #000 ,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+      color: $yellow;
+      font-size: 4rem;
+      font-weight: bold;
+      transform: rotate(90deg);
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+ &__col3 {
+
+  }
+}
+
+/* SECTION 2 - Dialogo */
+.dialogo {
+  position: relative;
+  &-box {
+    justify-content: flex-end;
+    .col2 {
+      max-width: 50%;
+      width: 100%;
+      position: relative;
+      min-height: 35rem;
+      img {
+        max-width: 28rem;
+        position: absolute;
+        z-index: 14;
+      }
+    }
+    &__bg {
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.dialogo2 {
+  &-box {
+    justify-content: flex-end;
+  }
+
+  &__col1 {
+    padding: 5rem;
+    max-width: 48%;
+    width: 100%;
+    color: $yellow;
+
+    & > div {
+      max-width: 20rem;
+      margin: 0 auto;
+    }
+
+    &-num1 {
+      font-size: 7rem;
+      margin: 0;
+      -webkit-text-stroke: 1px $yellow;
+      color: transparent;
+      text-align: center;
+    }
+
+    &-text1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+
+
+  &__col2 {
+    padding: 5rem;
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-text1 {
+      font-family: 'Impact', Arial, Helvetica, sans-serif;
+      color: $pink;
+      text-align: center;
+      max-width: 34rem;
+      font-size: 4rem;
+      text-transform: uppercase;
+    }
+    &-text2 {
+      font-size: 3rem;
+      text-align: center;
+      max-width: 53rem;
+      font-style: italic;
+      color: $yellow;
+      font-weight: bold;
+      position: absolute;
+      bottom: -73px;
+    }
+  }
+}
+
+/* BLUE SEPARATOR */
+.separator {
+  min-height: 1rem;
+}

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "live-server public/",
+    "sass": "sass --watch src/styles/style.scss:public/style.css --style compressed",
     "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
