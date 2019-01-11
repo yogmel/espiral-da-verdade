@@ -122,5 +122,109 @@
 
 /* BLUE SEPARATOR */
 .separator {
-  min-height: 1rem;
+  min-height: 35rem;
+  max-width: 96%;
+  margin: 0 auto;
 }
+
+/* SECTION 3 - ESPIRAL */
+.espiral {
+  &__img {
+    position: absolute;
+    width: 12rem;
+    z-index: 1;
+    &-1 {
+      right: 0;
+    }
+    &-2 {
+      top: 50%;
+      left: 8%;
+    }
+    &-3 {
+      top: 60%;
+      right: 30%;
+    }
+    &-4 {
+      top: 70%;
+    }
+    &-5 {
+      bottom: 0;
+      right: 11%;
+    }
+  }
+  &-box {
+    position: relative;
+    padding-top: 12rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    top: -20rem;
+    &__content {
+      padding: 7rem 0;
+      max-width: 60rem;
+      margin: 0 auto;
+      position: relative;
+      bottom: -10rem;
+      p {
+        text-transform: uppercase;
+        text-align: center;
+        font-style: italic;
+        font-size: 1.5rem;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+/* SECTION 4 -CTRL C */
+.ctrl-c {
+  position: relative;
+  &__overlay {
+    position: absolute;
+    font-size: 12rem;
+    font-weight: bold;
+    transform: rotate(90deg);
+    left: 18rem;
+    top: 9rem;
+    color: $yellow;
+  }
+  &__row1 {
+    display: flex;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  &__col-principal {
+    max-width: 60rem;
+  }
+  &__col {
+    width: 25%;
+    p {
+      font-family: monospace, Arial, Helvetica, sans-serif;
+      color: #cb383c;
+      font-size: 1.8rem;
+      padding-left: 4rem;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  &__row2 {
+    position: relative;
+    padding: 11rem 0;
+    p {
+      font-size: 2.3rem;
+      max-width: 35rem;
+      font-style: italic;
+      color: #debe4d;
+      font-weight: bold;
+      margin: 0 auto;
+    }
+    &-bg {
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+/* SECTION 5 - JOGO */
+
