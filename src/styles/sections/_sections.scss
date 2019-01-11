@@ -1,14 +1,47 @@
 /* SECTION 1 - Retangulo aureo */
 .retangulo {
-  padding: 4rem;
-
+  background: url(/img/section1-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10rem 5rem;
+  position: relative;
+  &__bg {
+    position: absolute;
+    width: 95%;
+    top: 0;
+  }
   &__col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .col1-img01 {
       max-width: 200px;
+    }
+    .col1-img02 {
+      position: relative;
+      p {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        text-align: center;
+        font-family: 'Impact', Arial, Helvetica,sans-serif;
+        font-size: 4rem;
+        transform: translate(50%, -50%);
+        margin: 0;
+        -webkit-text-stroke: 1px white;
+      }
     }
   }
 
   &__col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      max-width: 15rem;
+    }
     .col2-text {
       text-transform: uppercase;
       text-shadow:
@@ -29,7 +62,11 @@
   }
 
  &__col3 {
-
+    video {
+      height: 100%;
+      width: 100%;
+      max-width: 92rem;
+    }
   }
 }
 
@@ -57,6 +94,7 @@
 }
 
 .dialogo2 {
+  
   &-box {
     justify-content: flex-end;
   }
@@ -68,11 +106,12 @@
     color: $yellow;
 
     & > div {
-      max-width: 20rem;
+      max-width: 30rem;
       margin: 0 auto;
     }
 
     &-num1 {
+      font-family: 'everybody.worldblack';
       font-size: 7rem;
       margin: 0;
       -webkit-text-stroke: 1px $yellow;
@@ -82,7 +121,7 @@
 
     &-text1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bold;
       font-style: italic;
     }
@@ -101,11 +140,12 @@
 
     &-text1 {
       font-family: 'Impact', Arial, Helvetica, sans-serif;
-      color: $pink;
+      color: #e1acbc;
       text-align: center;
-      max-width: 34rem;
-      font-size: 4rem;
+      max-width: 45rem;
+      font-size: 5rem;
       text-transform: uppercase;
+      margin-top: 0;
     }
     &-text2 {
       font-size: 3rem;
@@ -181,6 +221,7 @@
 .ctrl-c {
   position: relative;
   &__overlay {
+    font-family: 'everybody.worldblack';
     position: absolute;
     font-size: 12rem;
     font-weight: bold;
@@ -257,9 +298,11 @@
   position: relative;
   margin-bottom: -10rem;
   &__title {
+    font-family: 'Impact', Arial, Helvetica, sans-serif;
     position: relative;
     z-index: 1;
-    font-size: 15rem;
+    letter-spacing: 1rem;
+    font-size: 17rem;
     font-weight: lighter;
     text-transform: uppercase;
     color: transparent;
