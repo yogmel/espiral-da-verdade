@@ -227,4 +227,91 @@
 }
 
 /* SECTION 5 - JOGO */
+.jogo {
+  padding: 4rem 10rem;
+  &__box {
+    max-width: 40rem;
+    &-title {
+      font-size: 3.3rem;
+      max-width: 35rem;
+      font-style: italic;
+      color: #debe4d;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    &-text {
+      margin: 0;
+      font-size: 1.6rem;
+      color: $green;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+  }
+}
 
+
+/* SECTION 6 - Tudo é relativo */
+.relativo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: -10rem;
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-size: 15rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: transparent;
+    margin: 0;
+  }
+}
+
+/* SECTION 7 - Emissor */
+.emissor {
+  padding: 4rem;
+  position: relative;
+  margin-bottom: -5rem;
+  &__box {
+    display: flex;
+    align-items: center;
+    max-width: 120rem;
+    justify-content: center;
+    margin: 0 auto;
+    img {
+      max-width: 75%;
+    }
+    p {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 2.6rem;
+      font-style: italic;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+    p:first-child {
+      margin-top: 6rem;
+
+    }
+  }
+
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  & > div {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  &__box {
+    color: $green;
+    max-width: 43rem;
+    font-size: 2rem;
+    font-family: monospace;
+  }
+}
