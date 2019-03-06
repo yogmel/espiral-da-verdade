@@ -6,3 +6,24 @@
 .flex {
   display: flex;
 }
+
+.display-mobile {
+  display: none;
+  @media screen and (max-width: $tablet-screen) {
+    display: block;
+  }
+}
+
+.display-desktop {
+  display: block;
+  @media screen and (max-width: $tablet-screen) {
+    display: none;
+  }
+}
+
+.container-mobile {
+  @media screen and (max-width: $tablet-screen) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

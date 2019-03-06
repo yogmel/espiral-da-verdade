@@ -12,16 +12,24 @@
     header
     section-minidoc
   -->
+<div class="container-mobile">
+
+
 <div class="bg-dark">
   <header class="header container">
+    <img src="./img/section1-bg.png" class="header__bg-mobile display-mobile" alt="">
     <div class="header-contents">
-      <img src="./img/header-01.png" class="img-responsive header-contents__img-small" alt="Ícone de um livro, com acesso ao ebook">
+      <img src="./img/header-01.png" class="img-responsive header-contents__img-small display-desktop" alt="Ícone de um livro, com acesso ao ebook">
       <img src="./img/header-02.gif" class="img-responsive header-contents__img-logo" alt="Logo da espiral da verdade">
-      <img src="./img/header-03.png" class="img-responsive header-contents__img-small" alt="Imagem de uma palavra cruzada, escrito Podcast">
+      <img src="./img/header-03.png" class="img-responsive header-contents__img-small display-desktop" alt="Imagem de uma palavra cruzada, escrito Podcast">
+      <div class="header-contents__mobile display-mobile">
+        <img src="./img/header-03.png" class="img-responsive header-contents__img-small" alt="Imagem de uma palavra cruzada, escrito Podcast">
+        <img src="./img/header-01.png" class="img-responsive header-contents__img-small" alt="Ícone de um livro, com acesso ao ebook">
+      </div>
     </div>
   </header>
 
-  <section class="retangulo container">
+  <section class="retangulo container" style="background-image: url(./img/section1-bg.png);">
     <img src="./img/section1-bg2.png" class="retangulo__bg" alt="">
     <div class="flex">
       <div class="retangulo__col1">
@@ -47,7 +55,7 @@
 
 
   <section class="dialogo">
-    <div class="flex dialogo-box">
+    <div class="flex dialogo-box display-desktop">
       <div class="bg-green col2">
         <img src="./img/section2-01.png" class="img-responsive" alt="">
       </div>
@@ -74,7 +82,7 @@
 
 <div class="bg-gray">
   <section>
-    <div class="bg-blue separator">
+    <div class="bg-blue separator display-desktop">
     </div>
   </section>
 
@@ -150,6 +158,15 @@
       <div class="ctrl-c__col-principal">
         <img src="img/section04-01.jpg" class="img-responsive" alt="">
       </div>
+      <div class="ctrl-c__row2 display-mobile">
+        <p class="stroke">
+          Remix é quando tiramos
+          as coisas do seu contexto
+          original, as alteramos e
+          inserimos em novos contextos.
+        </p>
+        <img src="./img/section04-bg.png" class="img-responsive ctrl-c__row2-bg display-desktop" alt="">
+      </div>
       <div class="ctrl-c__col">
         <p>Tudo pode ser ou
           não ser alguma
@@ -177,7 +194,7 @@
       </div>
     </div>
 
-    <div class="ctrl-c__row2">
+    <div class="ctrl-c__row2 display-desktop">
       <p class="stroke">
         Remix é quando tiramos
         as coisas do seu contexto
@@ -189,6 +206,7 @@
   </section>
 
   <section class="jogo">
+    <img src="./img/section04-bg.png" class="img-responsive display-mobile" alt="">
     <div class="jogo__box">
       <p class="jogo__box-title stroke">Há muito em jogo
           Na comunicação
@@ -226,9 +244,10 @@
       </div>
     </div>
   </footer>
-
 </div>
 
+
+</div>
 
 </body>
 </html>

@@ -1,22 +1,48 @@
 /* SECTION 1 - Retangulo aureo */
 .retangulo {
-  background: url(/img/section1-bg.png);
+  .flex {
+    @media screen and (max-width: $tablet-screen) {
+      flex-direction: column;
+    }
+  }
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10rem 5rem;
   position: relative;
+  @media screen and (max-width: $tablet-screen) {
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 4rem;
+  }
   &__bg {
     position: absolute;
     width: 95%;
     top: 0;
+    @media screen and (max-width: $tablet-screen) {
+      width: 655px;
+    right: -130px;
+    top: -150px;
+    }
   }
   &__col1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media screen and (max-width: $tablet-screen) {
+      order: 3;
+      position: relative;
+    }
     .col1-img01 {
       max-width: 200px;
+      @media screen and (max-width: $tablet-screen) {
+        position: absolute;
+        bottom: -36px;
+        z-index: 2;
+        right: 20px;
+        max-width: 140px;
+      }
     }
     .col1-img02 {
       position: relative;
@@ -39,8 +65,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: $tablet-screen) {
+      flex-direction: row;
+    }
     img {
       max-width: 15rem;
+      @media screen and (max-width: $tablet-screen) {
+        max-width: 5rem;
+      }
     }
     .col2-text {
       text-transform: uppercase;
@@ -58,6 +90,11 @@
       transform: rotate(90deg);
       text-align: center;
       font-style: italic;
+      @media screen and (max-width: $tablet-screen) {
+        transform: rotate(0deg);
+        font-size: 2rem;
+        max-width: 16rem;
+      }
     }
   }
 
@@ -66,6 +103,9 @@
       height: 100%;
       width: 100%;
       max-width: 92rem;
+      @media screen and (max-width: $tablet-screen) {
+        height: 30%;
+      }
     }
   }
 }
@@ -73,8 +113,15 @@
 /* SECTION 2 - Dialogo */
 .dialogo {
   position: relative;
+  @media screen and (max-width: $tablet-screen) {
+    overflow: hidden;
+  }
   &-box {
+    display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: $tablet-screen) {
+      display: none;
+    }
     .col2 {
       max-width: 50%;
       width: 100%;
@@ -89,6 +136,11 @@
     &__bg {
       position: absolute;
       top: 0;
+      @media screen and (max-width: $tablet-screen) {
+        width: 600px;
+        overflow: hidden;
+        top: 100px;
+      }
     }
   }
 }
@@ -97,6 +149,9 @@
   
   &-box {
     justify-content: flex-end;
+    @media screen and (max-width: $tablet-screen) {
+      flex-direction: column;
+    }
   }
 
   &__col1 {
@@ -104,7 +159,9 @@
     max-width: 48%;
     width: 100%;
     color: $yellow;
-
+    @media screen and (max-width: $tablet-screen) {
+      max-width: 100%;
+    }
     & > div {
       max-width: 30rem;
       margin: 0 auto;
@@ -137,6 +194,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @media screen and (max-width: $tablet-screen) {
+      max-width: 100%;
+    }
 
     &-text1 {
       font-family: 'Impact', Arial, Helvetica, sans-serif;
@@ -146,6 +206,9 @@
       font-size: 5rem;
       text-transform: uppercase;
       margin-top: 0;
+      @media screen and (max-width: $tablet-screen) {
+        font-size: 3rem;
+      }
     }
     &-text2 {
       font-size: 3rem;
@@ -156,6 +219,12 @@
       font-weight: bold;
       position: absolute;
       bottom: -73px;
+      @media screen and (max-width: $tablet-screen) {
+        width: 100%;
+        position: static;
+        font-size: 2rem;
+        margin: 0;
+      }
     }
   }
 }
@@ -172,6 +241,9 @@
   &__img {
     position: absolute;
     width: 12rem;
+    @media screen and (max-width: $tablet-screen) {
+      width: 7rem;
+    }
     z-index: 1;
     &-1 {
       right: 0;
@@ -199,12 +271,19 @@
     width: 100%;
     margin: 0 auto;
     top: -20rem;
+    @media screen and (max-width: $tablet-screen) {
+      padding-top: 0rem;
+      top: 0;
+    }
     &__content {
       padding: 7rem 0;
       max-width: 60rem;
       margin: 0 auto;
       position: relative;
       bottom: -10rem;
+      @media screen and (max-width: $tablet-screen) {
+        bottom: 0;
+      }
       p {
         text-transform: uppercase;
         text-align: center;
@@ -220,6 +299,9 @@
 /* SECTION 4 -CTRL C */
 .ctrl-c {
   position: relative;
+  @media screen and (max-width: $tablet-screen) {
+    margin-top: 4rem;
+  }
   &__overlay {
     font-family: 'everybody.worldblack';
     position: absolute;
@@ -229,17 +311,30 @@
     left: 18rem;
     top: 9rem;
     color: $yellow;
+    @media screen and (max-width: $tablet-screen) {
+      transform: rotate(0deg) translate(-50%, 0);
+      left: 50%;
+      font-size: 5rem;
+      width: 100%;
+      text-align: center;
+    }
   }
   &__row1 {
     display: flex;
     max-width: 120rem;
     margin: 0 auto;
+    @media screen and (max-width: $tablet-screen) {
+      flex-direction: column;
+    }
   }
   &__col-principal {
     max-width: 60rem;
   }
   &__col {
     width: 25%;
+    @media screen and (max-width: $tablet-screen) {
+      width: 100%;
+    }
     p {
       font-family: monospace, Arial, Helvetica, sans-serif;
       color: #cb383c;
@@ -247,11 +342,18 @@
       padding-left: 4rem;
       margin: 0;
       margin-bottom: 2rem;
+      @media screen and (max-width: $tablet-screen) {
+        padding: 1.5rem;
+        text-align: center;
+    }
     }
   }
   &__row2 {
     position: relative;
     padding: 11rem 0;
+    @media screen and (max-width: $tablet-screen) {
+      padding: 2rem; 
+    }
     p {
       font-size: 2.3rem;
       max-width: 35rem;
@@ -259,6 +361,10 @@
       color: #debe4d;
       font-weight: bold;
       margin: 0 auto;
+      @media screen and (max-width: $tablet-screen) {
+        text-align: right;
+        padding: 2rem;
+      }
     }
     &-bg {
       position: absolute;
@@ -270,6 +376,15 @@
 /* SECTION 5 - JOGO */
 .jogo {
   padding: 4rem 10rem;
+  @media screen and (max-width: $tablet-screen) {
+      padding: 2rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+  }
+  img {
+    width: 600px;
+    overflow: hidden;
+  }
   &__box {
     max-width: 40rem;
     &-title {
@@ -280,12 +395,18 @@
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 0;
+      @media screen and (max-width: $tablet-screen) {
+        font-size: 2.3rem;
+      }
     }
     &-text {
       margin: 0;
       font-size: 1.6rem;
       color: $green;
       font-family: "Comic Sans MS", cursive, sans-serif;
+      @media screen and (max-width: $tablet-screen) {
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -297,16 +418,23 @@
   justify-content: center;
   position: relative;
   margin-bottom: -10rem;
+  @media screen and (max-width: $tablet-screen) {
+    margin-bottom: 0;
+  }
   &__title {
     font-family: 'Impact', Arial, Helvetica, sans-serif;
     position: relative;
     z-index: 1;
     letter-spacing: 1rem;
-    font-size: 17rem;
+    font-size: 15rem;
     font-weight: lighter;
     text-transform: uppercase;
     color: transparent;
     margin: 0;
+    @media screen and (max-width: $tablet-screen) {
+      font-size: 4rem;
+      letter-spacing: 0;
+    }
   }
 }
 
@@ -315,6 +443,10 @@
   padding: 4rem;
   position: relative;
   margin-bottom: -5rem;
+  @media screen and (max-width: $tablet-screen) {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
   &__box {
     display: flex;
     align-items: center;
@@ -323,6 +455,10 @@
     margin: 0 auto;
     img {
       max-width: 75%;
+      @media screen and (max-width: $tablet-screen) {
+        max-width: 15rem;
+        width: 100%;
+      }
     }
     p {
       font-weight: bold;
@@ -331,10 +467,15 @@
       font-style: italic;
       margin-right: 2rem;
       margin-left: 2rem;
+      @media screen and (max-width: $tablet-screen) {
+      font-size: 1rem;
+      }
     }
     p:first-child {
       margin-top: 6rem;
-
+      @media screen and (max-width: $tablet-screen) {
+        margin-top: 0;
+      }
     }
   }
 
@@ -356,5 +497,9 @@
     max-width: 43rem;
     font-size: 2rem;
     font-family: monospace;
+    @media screen and (max-width: $tablet-screen) {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
   }
 }
