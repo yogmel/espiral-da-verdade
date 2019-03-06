@@ -1,6 +1,14 @@
 /* SECTION 1 - Retangulo aureo */
 .retangulo {
   .flex {
+    & > div {
+      width: 33%;
+      @media screen and (max-width: $tablet-screen) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
     @media screen and (max-width: $tablet-screen) {
       flex-direction: column;
     }
@@ -22,18 +30,34 @@
     top: 0;
     @media screen and (max-width: $tablet-screen) {
       width: 655px;
-    right: -130px;
-    top: -150px;
+      right: -130px;
+      top: -150px;
     }
   }
   &__col1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: $tablet-screen) {
-      order: 3;
-      position: relative;
+      order: 2;
     }
+    .podcast-container {
+      max-width: 29rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      color: white;
+      font-size: 1.6rem;
+      font-style: italic;
+      text-align: center;
+    }
+    // @media screen and (max-width: $tablet-screen) {
+    //   order: 3;
+    //   position: relative;
+    // }
     .col1-img01 {
       max-width: 200px;
       @media screen and (max-width: $tablet-screen) {
@@ -66,12 +90,40 @@
     justify-content: space-around;
     align-items: center;
     @media screen and (max-width: $tablet-screen) {
-      flex-direction: row;
+      order: 2;
+      flex-direction: column;
+      padding: 3rem;
+    }
+    .check-itens {
+      max-width: 30rem;
+      @media screen and (max-width: $tablet-screen) {
+        max-width: 100%;
+      }
+      & > p {
+        color: white;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      .img-check {
+        max-width: 3rem;
+        margin-right: 1rem;
+      }
+      ul {
+        padding: 0;
+      }
+      ul li {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        list-style: none;
+      }
     }
     img {
       max-width: 15rem;
       @media screen and (max-width: $tablet-screen) {
-        max-width: 5rem;
       }
     }
     .col2-text {
@@ -96,9 +148,48 @@
         max-width: 16rem;
       }
     }
+    .memes-container {
+      position: relative;
+      @media screen and (max-width: $tablet-screen) {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+      }
+      &__meme {
+        position: absolute;
+        max-width: 7rem;
+        &:first-child {
+          right: -90px;
+        }
+        &:nth-child(2){
+          right: -15px;
+          bottom: -8px;
+        }
+        &:nth-child(3){
+          left: -100px;
+          top: -50px;
+        }
+        &:nth-child(4){
+          left: -60px;
+        }
+      }
+    }
+      .text-espiral {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+      }
   }
 
  &__col3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: $tablet-screen) {
+      order: 0;
+    }
     video {
       height: 100%;
       width: 100%;
@@ -484,22 +575,44 @@
 /* FOOTER */
 .footer {
   position: relative;
+  background-color: $dark-color;
+  padding: 3rem 0;
   & > div {
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+    
   }
-  
   &__box {
-    color: $green;
-    max-width: 43rem;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: white;
     font-size: 2rem;
-    font-family: monospace;
+    justify-content: space-between;
     @media screen and (max-width: $tablet-screen) {
+      flex-direction: column;
       font-size: 1.5rem;
-      padding: 1rem;
+      padding: 3rem;
+    }
+    & > div:first-child {
+      width: 55%;
+      @media screen and (max-width: $tablet-screen) {
+        width: 100%;
+      }
+    }
+    & > div:last-child {
+      width: 40%;
+      @media screen and (max-width: $tablet-screen) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+    
+    .footer-time p {
+      margin: 5px 0;
     }
   }
 }

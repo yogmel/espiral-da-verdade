@@ -16,22 +16,38 @@
     }
   }
 }
-
+ 
 .header-contents {
   background-color: $dark-color;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 5rem;
   @media screen and (max-width: $tablet-screen) {
     flex-direction: column;
   }
+  &__description {
+    max-width: 20rem;
+    color: white;
+    font-style: italic;
+    font-size: 1.8rem;
+    text-align: center;
+    @media screen and (max-width: $tablet-screen) {
+      margin: 0;
+      order: 1;
+      position: relative;
+      top: -35px;
+    }
+  }
   &__img-small {
     max-width: 17rem;
+    order: 2;
   }
   &__img-logo {
     max-width: 75rem;
     @media screen and (max-width: $tablet-screen) {
       max-width: 27rem;
+      order: 0;
     }
   }
   &__mobile{

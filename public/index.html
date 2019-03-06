@@ -4,48 +4,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Espiral da Verdade</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 </head>
 <body>
   
-  <!-- 
-    header
-    section-minidoc
-  -->
 <div class="container-mobile">
 
-
 <div class="bg-dark">
+  <!-- HEADER -->
   <header class="header container">
-    <img src="./img/section1-bg.png" class="header__bg-mobile display-mobile" alt="">
+    <!-- <img src="./img/section1-bg.png" class="header__bg-mobile display-mobile" alt=""> -->
     <div class="header-contents">
-      <img src="./img/header-01.png" class="img-responsive header-contents__img-small display-desktop" alt="Ícone de um livro, com acesso ao ebook">
+      <p class="header-contents__description">
+        <strong>Espiral da Verdade</strong> <br>
+        subs. fem. <br>
+        É a sensação de caos e
+        confusão que destroi as
+        antigas certezas e
+        convicções dos indivíduos
+        sobre o mundo.
+      </p>
       <img src="./img/header-02.gif" class="img-responsive header-contents__img-logo" alt="Logo da espiral da verdade">
-      <img src="./img/header-03.png" class="img-responsive header-contents__img-small display-desktop" alt="Imagem de uma palavra cruzada, escrito Podcast">
-      <div class="header-contents__mobile display-mobile">
+      <img src="./img/header-01.png" class="img-responsive header-contents__img-small" alt="Ícone de um livro, com acesso ao ebook">
+      <!-- <div class="header-contents__mobile display-mobile">
         <img src="./img/header-03.png" class="img-responsive header-contents__img-small" alt="Imagem de uma palavra cruzada, escrito Podcast">
         <img src="./img/header-01.png" class="img-responsive header-contents__img-small" alt="Ícone de um livro, com acesso ao ebook">
-      </div>
+      </div> -->
     </div>
   </header>
 
-  <section class="retangulo container" style="background-image: url(./img/section1-bg.png);">
+  <section class="retangulo container">
     <img src="./img/section1-bg2.png" class="retangulo__bg" alt="">
     <div class="flex">
       <div class="retangulo__col1">
-        <img src="./img/section1-01.png" class="img-responsive col1-img01" alt="Balão com escrito O que mudou na internet?">
-        <div class="col1-img02">
-          <img src="./img/section1-02.png" class="img-responsive" alt="Ilustração com imagem clássica com emojis felizes sobre a faces das pessoas. Sobre ilustração, está escrito 'Você está infotoxicado?'">
-          <p>VOCÊ ESTÁ <br>
-              INFOTOXICADO?</p>
+        <div class="podcast-container">
+          <p class="aux-text">Siga para ficar por dentro dos podcasts sobre o tema</p>
+          <img src="./img/header-03.png" class="img-responsive header-contents__img-small" alt="Imagem de uma palavra cruzada, escrito Podcast">
         </div>
       </div>
       <div class="retangulo__col2">
-        <img src="./img/section1-03.png" class="img-responsive" alt="Forma geométrica vermelha que parece com uma maçã">
-        <p class="col2-text">Você já Caiu na Espiral da Verdade?</p>
-        <img src="./img/section1-04.png" class="img-responsive" alt="Espiral em forma de cone">
+        <div class="check-itens">
+          <p><strong>Se você:</strong></p>
+          <ul>
+            <li><img src="./img/checked-box.svg" class="img-check" alt="Caixa marcado como checado"> É bombardeado com informação a todo momento;</li>
+            <li><img src="./img/checked-box.svg" class="img-check" alt="Caixa marcado como checado">Não sabe se acredita no amigo, no jornal, no professor ou no vídeo do WhatsApp;</li>
+            <li><img src="./img/checked-box.svg" class="img-check" alt="Caixa marcado como checado">Fica pressionado a ter uma opinião e, quando finalmente se decide, surge outra polêmica</li>
+          </ul>
+        </div>
+        <div class="memes-container">
+          <img src="./img/section3-01.png" class="memes-container__meme" alt="">
+          <img src="./img/section3-02.jpg" class="memes-container__meme" alt="">
+          <img src="./img/section3-03.jpg" class="memes-container__meme" alt="">
+          <img src="./img/section3-04.jpg" class="memes-container__meme" alt="">
+          <img src="./img/section1-04.png" class="img-responsive" alt="Espiral em forma de cone">
+        </div>
+        <p class="text-espiral">Você caiu na espiral da verdade!</p>
       </div>
       <div class="retangulo__col3">
+        <p class="aux-text">Assista o que os especialistas
+            tem a dizer:</p>
           <video width="100%" height="100%">
             <source src="./img/section1-video.mp4" type="video/mp4">
           </video>
@@ -53,201 +70,27 @@
     </div>
   </section>
 
+  <footer class="footer">
 
-  <section class="dialogo">
-    <div class="flex dialogo-box display-desktop">
-      <div class="bg-green col2">
-        <img src="./img/section2-01.png" class="img-responsive" alt="">
-      </div>
-    </div>
-    <img src="./img/section2-bg.png" class="img-responsive dialogo-box__bg" alt="">
-  </section>
-
-  <section class="dialogo2">
-    <div class="flex dialogo2-box">
-      <div class="dialogo2__col1 bg-blue">
+      <div class="footer__box">
         <div>
-          <h3 class="dialogo2__col1-num1 stroke">52%</h3>
-          <p class="dialogo2__col1-text1">das pessoas já viram uma briga no grupo de família do Whatsapp</p>
+          Pesquisa Geração Ctrl Z, Consumoteca. Todos os direito reservados. O uso dos dados contidos neste Lab é livre, desde que se atribua a licença de Creative Commons.
+        </div>
+        <div class="footer-time">
+          <p><span class="highlight">Direção geral:</span> Michel Alcoforado</p>
+          <p><span class="highlight">Time de pesquisa:</span> Michel Alcoforado</p>
+          <p><span class="highlight">Direção geral:</span> Michel Alcoforado</p>
+          <p><span class="highlight">Direção geral:</span> Michel Alcoforado</p>
         </div>
       </div>
-      <div class="dialogo2__col2 bg-green">
-        <p class="dialogo2__col2-text1 stroke">Estamos perdendo a capacidade de dialogar</p>
-        <p class="dialogo2__col2-text2 stroke">Nesse LAB, você vai entender por que anda brigando tanto na internet</p>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-<div class="bg-gray">
-  <section>
-    <div class="bg-blue separator display-desktop">
-    </div>
-  </section>
-
-  <section class="espiral">
-    <div class="bg-red espiral-box">
-      <img src="./img/section3-01.png" alt="" class="espiral__img espiral__img-1">
-      <img src="./img/section3-02.jpg" alt="" class="espiral__img espiral__img-2">
-      <img src="./img/section3-03.jpg" alt="" class="espiral__img espiral__img-3">
-      <img src="./img/section3-04.jpg" alt="" class="espiral__img espiral__img-4">
-      <img src="./img/section3-05.png" alt="" class="espiral__img espiral__img-5">
-      <div class="bg-yellow espiral-box__content">
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-        <p>Você caiu na espiral da verdade</p>
-
-      </div>
-    </div>
-  </section>
-  
-  <section class="ctrl-c">
-    <h2 class="ctrl-c__overlay">CTRL C <br>
-        + CTRL V</h2>
-    <div class="ctrl-c__row1">
-      <div class="ctrl-c__col"></div>
-      <div class="ctrl-c__col-principal">
-        <img src="img/section04-01.jpg" class="img-responsive" alt="">
-      </div>
-      <div class="ctrl-c__row2 display-mobile">
-        <p class="stroke">
-          Remix é quando tiramos
-          as coisas do seu contexto
-          original, as alteramos e
-          inserimos em novos contextos.
-        </p>
-        <img src="./img/section04-bg.png" class="img-responsive ctrl-c__row2-bg display-desktop" alt="">
-      </div>
-      <div class="ctrl-c__col">
-        <p>Tudo pode ser ou
-          não ser alguma
-          coisa: imagens,
-          textos, conceitos,
-          palavras. Com pequenas
-          alterações, imagens
-          mudam de significado,
-          graças às milhares de
-          possibilidades dentro
-          do mundo das redes
-          e da cultura. Tudo
-          acontece na lógica do
-          remix.
-        </p>
-        <p>Essa infinita gama
-            de possibilidades
-            nos deixa perdidos,
-            e a cada momento que
-            passa, novos sentidos
-            e conteúdos são
-            criados a partir dessa
-            relatividade
-        </p>
-      </div>
-    </div>
-
-    <div class="ctrl-c__row2 display-desktop">
-      <p class="stroke">
-        Remix é quando tiramos
-        as coisas do seu contexto
-        original, as alteramos e
-        inserimos em novos contextos.
-      </p>
-      <img src="./img/section04-bg.png" class="img-responsive ctrl-c__row2-bg" alt="">
-    </div>
-  </section>
-
-  <section class="jogo">
-    <img src="./img/section04-bg.png" class="img-responsive display-mobile" alt="">
-    <div class="jogo__box">
-      <p class="jogo__box-title stroke">Há muito em jogo
-          Na comunicação
-      </p>
-      <p class="jogo__box-text">
-          Você com certeza já ouviu que “isso é
-          relativo”, “cada um tem seu ponto de vista”.
-      </p>
-    </div>
-  </section>
-
-  <section class="relativo">
-    <h3 class="relativo__title stroke">
-      "Tudo é relativo"
-    </h3>
-  </section>
-
-  <section class="emissor">
-    <div class="emissor__box">
-      <p>Emissor</p>
-      <img src="./img/section05-01.png" alt="">
-      <p>Receptor</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div>
-      <div class="footer__box">
-        <p>
-          Sabe aquela ideia de que a comunicação acontece
-          a partir de uma relação linear entre um emissor
-          e um receptor? Isso não dá conta de explicar a
-          forma como nos comunicamos nos dias de hoje.
-        </p>  
-      </div>
-    </div>
+   
   </footer>
 </div>
 
 
 </div>
+
+<script src="./pacote.js"></script>
 
 </body>
 </html>

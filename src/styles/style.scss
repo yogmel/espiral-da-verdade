@@ -1,15 +1,16 @@
-@font-face {
-  font-family: 'everybody.worldblack';
-  src: url('fonts/everybody.world-black-webfont.woff2') format('woff2'),
-       url('fonts/everybody.world-black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'everybody.worldblack';
+//   src: url('fonts/everybody.world-black-webfont.woff2') format('woff2'),
+//        url('fonts/everybody.world-black-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 @import './base/variables';
 @import './base/base';
 @import './base/typography';
 @import './utilities/layout';
 @import './utilities/bg';
+@import './utilities/typography';
 @import './sections/header';
 @import './sections/sections';
