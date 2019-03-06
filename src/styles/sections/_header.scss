@@ -57,11 +57,11 @@
       background-color: #988e8c;
       justify-content: space-evenly;
       width: 100%;
+      }
       @media screen and (max-width: $tablet-screen) {
         min-height: 26vh;
         align-items: flex-end;
       }
-    }
     img {
       @media screen and (max-width: $tablet-screen) {
         max-width: 8rem;
