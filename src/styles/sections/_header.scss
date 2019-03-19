@@ -26,11 +26,24 @@
   @media screen and (max-width: $tablet-screen) {
     flex-direction: column;
   }
+  &__description-bg {
+    background: url(/img/section1-01.png) no-repeat center;
+    background-size: 100%;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    align-items: center;
+    @media screen and (max-width: $tablet-screen) {
+      align-items: flex-end;
+      padding-bottom: 2rem;
+    }
+  }
   &__description {
     max-width: 20rem;
     color: white;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     @media screen and (max-width: $tablet-screen) {
       margin: 0;
