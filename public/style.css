@@ -159,6 +159,7 @@ a {
   }
 }
 .header-contents__img-small {
+  cursor: pointer;
   max-width: 17rem;
   order: 2;
 }
@@ -878,6 +879,9 @@ a {
 .footer__box .footer-time p .highlight {
   background-color: yellow;
   color: black;
+}
+.footer__box .footer-time p .highlight_orange {
+  background-color: #e95926;
 }
 
 /*# sourceMappingURL=style.css.map */
