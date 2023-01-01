@@ -17,15 +17,15 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/yogmel/consumoteca-lab#readme",
   "dependencies": {
-    "css-loader": "^2.1.0",
+    "css-loader": "^6.7.3",
     "live-server": "^1.2.1",
     "node-sass": "^7.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^5.0.1"
   }
 }
